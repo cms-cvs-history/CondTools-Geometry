@@ -1,6 +1,6 @@
 import FWCore.ParameterSet.Config as cms
 
-process = cms.Process("ECALGeometryWriter")
+process = cms.Process("CaloGeometryWriter")
 process.load("CondCore.DBCommon.CondDBCommon_cfi")
 process.load('Configuration/StandardSequences/GeometryIdeal_cff')
 
@@ -11,7 +11,7 @@ process.source = cms.Source("EmptyIOVSource",
                             interval = cms.uint64(1)
                             )
 
-process.ECALGeometryWriter = cms.EDAnalyzer("PEcalGeometryBuilder")
+process.CaloGeometryWriter = cms.EDAnalyzer("PCaloGeometryBuilder")
 
 process.PoolDBOutputService = cms.Service("PoolDBOutputService",
                                           process.CondDBCommon,
@@ -27,5 +27,5 @@ process.maxEvents = cms.untracked.PSet(
     input = cms.untracked.int32(1)
     )
 
-process.p1 = cms.Path(process.ECALGeometryWriter)
+process.p1 = cms.Path(process.CaloGeometryWriter)
 
