@@ -8,6 +8,8 @@ pool_build_object_relational_mapping -f $CMSSW_BASE/src/CondFormats/GeometryObje
 pool_build_object_relational_mapping -f $CMSSW_BASE/src/CondFormats/GeometryObjects/xml/PEcalPreshower_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
 #Hcal Geometry
 pool_build_object_relational_mapping -f $CMSSW_BASE/src/CondFormats/GeometryObjects/xml/PHcal_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
+#CaloTower Geometry
+pool_build_object_relational_mapping -f $CMSSW_BASE/src/CondFormats/GeometryObjects/xml/PCaloTower_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
 #Zdc Geometry
 pool_build_object_relational_mapping -f $CMSSW_BASE/src/CondFormats/GeometryObjects/xml/PZdc_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
 #Castor Geometry
