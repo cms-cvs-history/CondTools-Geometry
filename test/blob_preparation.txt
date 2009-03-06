@@ -19,3 +19,5 @@ pool_build_object_relational_mapping -f $CMSSW_BASE/src/CondFormats/GeometryObje
 pool_build_object_relational_mapping -f $CMSSW_BASE/src/CondFormats/GeometryObjects/xml/CSCRecoGeometry_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
 #DT Geometry
 pool_build_object_relational_mapping -f $CMSSW_BASE/src/CondFormats/GeometryObjects/xml/DTRecoGeometry_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
+#RPC Geometry
+pool_build_object_relational_mapping -f $CMSSW_BASE/src/CondFormats/GeometryObjects/xml/RPCRecoGeometry_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
