@@ -1,23 +1,23 @@
 #XML
-pool_build_object_relational_mapping -f $CMSSW_BASE/src/CondFormats/GeometryObjects/xml/GeometryFile_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
+pool_build_object_relational_mapping -f $CMSSW_RELEASE_BASE/src/CondFormats/GeometryObjects/xml/GeometryFile_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
 #Tracker Geometry
-pool_build_object_relational_mapping -f $CMSSW_BASE/src/CondFormats/GeometryObjects/xml/PGeometricDet_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
+pool_build_object_relational_mapping -f $CMSSW_RELEASE_BASE/src/CondFormats/GeometryObjects/xml/PGeometricDet_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
 #Ecal Geometry
-pool_build_object_relational_mapping -f $CMSSW_BASE/src/CondFormats/GeometryObjects/xml/PEcalBarrel_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
-pool_build_object_relational_mapping -f $CMSSW_BASE/src/CondFormats/GeometryObjects/xml/PEcalEndcap_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
-pool_build_object_relational_mapping -f $CMSSW_BASE/src/CondFormats/GeometryObjects/xml/PEcalPreshower_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
+pool_build_object_relational_mapping -f $CMSSW_RELEASE_BASE/src/CondFormats/GeometryObjects/xml/PEcalBarrel_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
+pool_build_object_relational_mapping -f $CMSSW_RELEASE_BASE/src/CondFormats/GeometryObjects/xml/PEcalEndcap_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
+pool_build_object_relational_mapping -f $CMSSW_RELEASE_BASE/src/CondFormats/GeometryObjects/xml/PEcalPreshower_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
 #Hcal Geometry
-pool_build_object_relational_mapping -f $CMSSW_BASE/src/CondFormats/GeometryObjects/xml/PHcal_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
+pool_build_object_relational_mapping -f $CMSSW_RELEASE_BASE/src/CondFormats/GeometryObjects/xml/PHcal_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
 #CaloTower Geometry
-pool_build_object_relational_mapping -f $CMSSW_BASE/src/CondFormats/GeometryObjects/xml/PCaloTower_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
+pool_build_object_relational_mapping -f $CMSSW_RELEASE_BASE/src/CondFormats/GeometryObjects/xml/PCaloTower_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
 #Zdc Geometry
-pool_build_object_relational_mapping -f $CMSSW_BASE/src/CondFormats/GeometryObjects/xml/PZdc_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
+pool_build_object_relational_mapping -f $CMSSW_RELEASE_BASE/src/CondFormats/GeometryObjects/xml/PZdc_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
 #Castor Geometry
-pool_build_object_relational_mapping -f $CMSSW_BASE/src/CondFormats/GeometryObjects/xml/PCastor_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
+pool_build_object_relational_mapping -f $CMSSW_RELEASE_BASE/src/CondFormats/GeometryObjects/xml/PCastor_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
 #CSC Geometry
-pool_build_object_relational_mapping -f $CMSSW_BASE/src/CondFormats/GeometryObjects/xml/CSCRecoDigiParameters_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
-pool_build_object_relational_mapping -f $CMSSW_BASE/src/CondFormats/GeometryObjects/xml/CSCRecoGeometry_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
+pool_build_object_relational_mapping -f $CMSSW_RELEASE_BASE/src/CondFormats/GeometryObjects/xml/CSCRecoDigiParameters_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
+pool_build_object_relational_mapping -f $CMSSW_RELEASE_BASE/src/CondFormats/GeometryObjects/xml/CSCRecoGeometry_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
 #DT Geometry
-pool_build_object_relational_mapping -f $CMSSW_BASE/src/CondFormats/GeometryObjects/xml/DTRecoGeometry_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
+pool_build_object_relational_mapping -f $CMSSW_RELEASE_BASE/src/CondFormats/GeometryObjects/xml/DTRecoGeometry_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
 #RPC Geometry
-pool_build_object_relational_mapping -f $CMSSW_BASE/src/CondFormats/GeometryObjects/xml/RPCRecoGeometry_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
+pool_build_object_relational_mapping -f $CMSSW_RELEASE_BASE/src/CondFormats/GeometryObjects/xml/RPCRecoGeometry_basic_0.xml -d CondFormatsGeometryObjects -c sqlite_file:myfile.db
