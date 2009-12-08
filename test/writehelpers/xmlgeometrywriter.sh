@@ -7,18 +7,17 @@ cmsRun geometrywriter.py
 cmsRun geometryxmlwriterExtendedGFlash.py
 cmsRun geometryxmlwriterIdeal.py
 cmsRun geometryxmlwriterIdealGFlash.py
-cmsRun xmlgeometrywriter.py
-#cat xmlgeometrywriter.py
+#NOTE: the first one (ge.xml) is not written here ... it is written by geometrywriter.py above.
 sed -i '{s/Extended/ExtendedGFlash/g}' xmlgeometrywriter.py
-sed -i '{s/ge.xml/geg.xml/g}' xmlgeometrywriter.py
+sed -i '{s/\/ge/\/geg/g}' xmlgeometrywriter.py
 cmsRun xmlgeometrywriter.py
 #cat xmlgeometrywriter.py
 sed -i '{s/Extended/Ideal/g}' xmlgeometrywriter.py
-sed -i '{s/geg.xml/gig.xml/g}' xmlgeometrywriter.py
+sed -i '{s/\/geg/\/gig/g}' xmlgeometrywriter.py
 cmsRun xmlgeometrywriter.py
 #cat xmlgeometrywriter.py
 sed -i '{s/IdealGFlash/Ideal/g}' xmlgeometrywriter.py
-sed -i '{s/gig.xml/gi.xml/g}' xmlgeometrywriter.py
+sed -i '{s/\/gig/\/gi/g}' xmlgeometrywriter.py
 cmsRun xmlgeometrywriter.py
 #cat xmlgeometrywriter.py
 source cmscondExport.sh
