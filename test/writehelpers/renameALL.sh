@@ -13,4 +13,5 @@
 ../../OracleDBA/test/renameFiles.sh HCALRECO_Geometry.db metaHCALRECO.txt HCALRECO_Geometry_TagXX
 ../../OracleDBA/test/renameFiles.sh RPCRECO_Geometry.db metaRPCRECO.txt RPCRECO_Geometry_TagXX
 ../../OracleDBA/test/renameFiles.sh TKRECO_Geometry.db metaTKRECO.txt TKRECO_Geometry_TagXX
+../../OracleDBA/test/renameFiles.sh TKExtra_Geometry.db metaTKExtra.txt TKExtra_Geometry_TagXX
 ../../OracleDBA/test/renameFiles.sh ZDCRECO_Geometry.db metaZDCRECO.txt ZDCRECO_Geometry_TagXX
