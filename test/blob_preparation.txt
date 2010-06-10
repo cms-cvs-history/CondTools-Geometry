@@ -1,1 +1,0 @@
-cmscond_bootstrap_detector -f ./dbconfig.xml -D GEOMETRY -b $CMSSW_BASE -v
