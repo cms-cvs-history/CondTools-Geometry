@@ -11,7 +11,7 @@ echo ${mytag}
 sed -i {s/TagXX/${mytag}/g} *.py
 sed -i {s/TagXX/${mytag}/g} *.txt
 sed -i {s/TagXX/${mytag}/g} *.sh
-exit
+
 cmsRun geometryxmlwriter.py
 cmsRun geometrywriter.py
 sed -i '{s/Extended/ExtendedGFlash/g}' geometryxmlwriter.py
