@@ -11,7 +11,9 @@ echo ${mytag}
 sed -i {s/TagXX/${mytag}/g} *.py
 sed -i {s/TagXX/${mytag}/g} *.txt
 sed -i {s/TagXX/${mytag}/g} *.sh
-
+sed -i {s/ge${mytag}/geTagXX/g} geometrywriter.py
+sed -i {s/ge${mytag}/geTagXX/g} geometryxmlwriter.py
+sed -i {s/ge${mytag}/geTagXX/g} xmlgeometrywriter.py
 cmsRun geometryxmlwriter.py
 cmsRun geometrywriter.py
 sed -i '{s/Extended/ExtendedGFlash/g}' geometryxmlwriter.py
@@ -41,11 +43,13 @@ cmsRun geometryxmlwriter.py
 sed -i '{s/Extended/ExtendedGFlash/g}' xmlgeometrywriter.py
 sed -i '{s/\/ge/\/geg/g}' xmlgeometrywriter.py
 cmsRun xmlgeometrywriter.py
-sed -i '{s/Extended/Ideal/g}' xmlgeometrywriter.py
-sed -i '{s/\/geg/\/gig/g}' xmlgeometrywriter.py
-cmsRun xmlgeometrywriter.py
+#sed -i '{s/Extended/Ideal/g}' xmlgeometrywriter.py
+#sed -i '{s/\/geg/\/gig/g}' xmlgeometrywriter.py
+#cmsRun xmlgeometrywriter.py
 #sed -i '{s/IdealGFlash/Ideal/g}' xmlgeometrywriter.py
 #sed -i '{s/\/gig/\/gi/g}' xmlgeometrywriter.py
+sed -i '{s/ExtendedGFlash/Ideal/g}' xmlgeometrywriter.py
+sed -i '{s/\/geg/\/gi/g}' xmlgeometrywriter.py
 cmsRun xmlgeometrywriter.py
 sed -i '{s/Ideal/ExtendedX0Min/g}' xmlgeometrywriter.py
 sed -i '{s/\/gi/\/gexmin/g}' xmlgeometrywriter.py
