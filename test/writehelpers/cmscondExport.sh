@@ -1,10 +1,10 @@
-cmscond_export_iov -s sqlite_file:myfile.db -d sqlite_file:GeometryFileExtended.db -D CondFormatsGeometryObjects  -t XMLFILE_Geometry_Extended_TagXX -l sqlite_file:localpopconlog.db
-cmscond_export_iov -s sqlite_file:myfile.db -d sqlite_file:GeometryFileExtendedGFlash.db -D CondFormatsGeometryObjects  -t XMLFILE_Geometry_ExtendedGFlash_TagXX -l sqlite_file:localpopconlog.db
-cmscond_export_iov -s sqlite_file:myfile.db -d sqlite_file:GeometryFileIdeal.db -D CondFormatsGeometryObjects  -t XMLFILE_Geometry_Ideal_TagXX -l sqlite_file:localpopconlog.db
-cmscond_export_iov -s sqlite_file:myfile.db -d sqlite_file:GeometryFileExtendedLiMin.db -D CondFormatsGeometryObjects  -t XMLFILE_Geometry_ExtendedLiMin_TagXX -l sqlite_file:localpopconlog.db
-cmscond_export_iov -s sqlite_file:myfile.db -d sqlite_file:GeometryFileExtendedLiMax.db -D CondFormatsGeometryObjects  -t XMLFILE_Geometry_ExtendedLiMax_TagXX -l sqlite_file:localpopconlog.db
-cmscond_export_iov -s sqlite_file:myfile.db -d sqlite_file:GeometryFileExtendedX0Min.db -D CondFormatsGeometryObjects  -t XMLFILE_Geometry_ExtendedX0Min_TagXX -l sqlite_file:localpopconlog.db
-cmscond_export_iov -s sqlite_file:myfile.db -d sqlite_file:GeometryFileExtendedX0Max.db -D CondFormatsGeometryObjects  -t XMLFILE_Geometry_ExtendedX0Max_TagXX -l sqlite_file:localpopconlog.db
+cmscond_export_iov -s sqlite_file:myfile.db -d sqlite_file:GeometryFileExtended.db -D CondFormatsGeometryObjects  -t XMLFILE_Geometry_TagXX_Extended_mc -l sqlite_file:localpopconlog.db
+cmscond_export_iov -s sqlite_file:myfile.db -d sqlite_file:GeometryFileExtendedGFlash.db -D CondFormatsGeometryObjects  -t XMLFILE_Geometry_TagXX_ExtendedGFlash_mc -l sqlite_file:localpopconlog.db
+cmscond_export_iov -s sqlite_file:myfile.db -d sqlite_file:GeometryFileIdeal.db -D CondFormatsGeometryObjects  -t XMLFILE_Geometry_TagXX_Ideal_mc -l sqlite_file:localpopconlog.db
+cmscond_export_iov -s sqlite_file:myfile.db -d sqlite_file:GeometryFileExtendedLiMin.db -D CondFormatsGeometryObjects  -t XMLFILE_Geometry_TagXX_ExtendedLiMin_mc -l sqlite_file:localpopconlog.db
+cmscond_export_iov -s sqlite_file:myfile.db -d sqlite_file:GeometryFileExtendedLiMax.db -D CondFormatsGeometryObjects  -t XMLFILE_Geometry_TagXX_ExtendedLiMax_mc -l sqlite_file:localpopconlog.db
+cmscond_export_iov -s sqlite_file:myfile.db -d sqlite_file:GeometryFileExtendedX0Min.db -D CondFormatsGeometryObjects  -t XMLFILE_Geometry_TagXX_ExtendedX0Min_mc -l sqlite_file:localpopconlog.db
+cmscond_export_iov -s sqlite_file:myfile.db -d sqlite_file:GeometryFileExtendedX0Max.db -D CondFormatsGeometryObjects  -t XMLFILE_Geometry_TagXX_ExtendedX0Max_mc -l sqlite_file:localpopconlog.db
 cmscond_export_iov -s sqlite_file:myfile.db -d sqlite_file:TKRECO_Geometry.db -D CondFormatsGeometryObjects  -t TKRECO_Geometry_TagXX -l sqlite_file:localpopconlog.db
 cmscond_export_iov -s sqlite_file:myfile.db -d sqlite_file:TKExtra_Geometry.db -D CondFormatsGeometryObjects  -t TKExtra_Geometry_TagXX -l sqlite_file:localpopconlog.db
 cmscond_export_iov -s sqlite_file:myfile.db -d sqlite_file:EBRECO_Geometry.db -D CondFormatsGeometryObjects  -t EBRECO_Geometry_TagXX -l sqlite_file:localpopconlog.db
