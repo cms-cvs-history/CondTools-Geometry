@@ -2,7 +2,7 @@
 
 if [ $# -ne 1 ]
 then
-  echo Error: xmlgeometrywriter.sh requires exactly one argument which is the tag
+  echo Error: createPayloads.sh requires exactly one argument which is the tag
   exit 1
 fi
 mytag=$1
@@ -97,4 +97,4 @@ cmsRun xmlgeometrywriter.py
 # (myfile.db) in the steps above.  Extract the different
 # pieces into separate database files.  These are the payloads
 # that get uploaded to the dropbox.  There is one for each tag
-./cmscondExport.sh
+./splitDatabase.sh
