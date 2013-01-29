@@ -1,5 +1,6 @@
 #!/bin/sh
 
+
 if [ $# -ne 1 ]
 then
   echo Error: createExtendedPhaseIPixelPayloads.sh requires exactly one argument which is the tag
