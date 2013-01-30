@@ -11,9 +11,6 @@ process.load('Configuration.Geometry.GeometryExtendedPhaseIPixel_cff')
 process.load('Geometry.MuonNumbering.muonNumberingInitialization_cfi')
 process.load('Geometry.CaloEventSetup.CaloGeometryDBWriter_cfi')
 
-import Geometry.HcalEventSetup.hcalSLHCTopologyConstants_cfi as hcalTopologyConstants_cfi
-process.hcalTopologyIdeal.hcalTopologyConstants = cms.PSet(hcalTopologyConstants_cfi.hcalTopologyConstants)
-
 process.source = cms.Source("EmptyIOVSource",
                             lastValue = cms.uint64(1),
                             timetype = cms.string('runnumber'),
@@ -34,10 +31,6 @@ process.TrackerGeometricDetExtraESModule = cms.ESProducer( "TrackerGeometricDetE
                                                            fromDDD = cms.bool( True ),
                                                            )
 
-process.trackerNumberingGeometry.fromDDD = cms.bool( True )
-process.trackerNumberingGeometry.layerNumberPXB = cms.uint32(18)
-process.trackerNumberingGeometry.totalBlade = cms.uint32(56)
-
 process.TrackerGeometryWriter = cms.EDAnalyzer("PGeometricDetBuilder")
 process.TrackerGeometryExtraWriter = cms.EDAnalyzer("PGeometricDetExtraBuilder")
 
@@ -54,7 +47,7 @@ process.CondDBCommon.timetype = cms.untracked.string('runnumber')
 process.CondDBCommon.connect = cms.string('sqlite_file:myfile.db')
 process.PoolDBOutputService = cms.Service("PoolDBOutputService",
                                           process.CondDBCommon,
-                                          toPut = cms.VPSet(cms.PSet(record = cms.string('GeometryFileRcd'),tag = cms.string('XMLFILE_Geometry_TagXX_ExtendedPhase1Pixel_mc')),
+                                          toPut = cms.VPSet(cms.PSet(record = cms.string('GeometryFileRcd'),tag = cms.string('XMLFILE_Geometry_TagXX_ExtendedPhaseIPixel_mc')),
                                                             cms.PSet(record = cms.string('IdealGeometryRecord'),tag = cms.string('TKRECO_Geometry_TagXX')),
                                                             cms.PSet(record = cms.string('PGeometricDetExtraRcd'),tag = cms.string('TKExtra_Geometry_TagXX')),
                                                             cms.PSet(record = cms.string('PEcalBarrelRcd'),   tag = cms.string('EBRECO_Geometry_TagXX')),
