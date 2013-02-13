@@ -7,7 +7,7 @@ process.load("CondCore.DBCommon.CondDBCommon_cfi")
 # that fill the DDCompactView. The modules that fill
 # the reco part of the database need the DDCompactView.
 ###process.load("SLHCUpgradeSimulations.Geometry.Phase1_cmsSimIdealGeometryXML_cfi")
-process.load('Configuration.Geometry.GeometryExtendedPhaseIPixel_cff')
+process.load('Configuration.Geometry.GeometryExtended2017_cff')
 process.load('Geometry.MuonNumbering.muonNumberingInitialization_cfi')
 process.load('Geometry.CaloEventSetup.CaloGeometryDBWriter_cfi')
 
@@ -47,7 +47,7 @@ process.CondDBCommon.timetype = cms.untracked.string('runnumber')
 process.CondDBCommon.connect = cms.string('sqlite_file:myfile.db')
 process.PoolDBOutputService = cms.Service("PoolDBOutputService",
                                           process.CondDBCommon,
-                                          toPut = cms.VPSet(cms.PSet(record = cms.string('GeometryFileRcd'),tag = cms.string('XMLFILE_Geometry_TagXX_ExtendedPhaseIPixel_mc')),
+                                          toPut = cms.VPSet(cms.PSet(record = cms.string('GeometryFileRcd'),tag = cms.string('XMLFILE_Geometry_TagXX_Extended2017_mc')),
                                                             cms.PSet(record = cms.string('IdealGeometryRecord'),tag = cms.string('TKRECO_Geometry_TagXX')),
                                                             cms.PSet(record = cms.string('PGeometricDetExtraRcd'),tag = cms.string('TKExtra_Geometry_TagXX')),
                                                             cms.PSet(record = cms.string('PEcalBarrelRcd'),   tag = cms.string('EBRECO_Geometry_TagXX')),
